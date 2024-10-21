@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Cinzel:wght@400..900&display=swap');
+
+body {
+    background-color: #00ADB5;
+}
+
+.page-container {
+    background-color: #fff6e7;
+    border: 3px solid;
+    box-shadow: 5px 5px;
+    border-radius: 20px;
+    margin: 50px;
+    margin-top: 60px;
+}
+
+.top-photo {
+    border: 0px;
+    border-radius: 50%;
+}
+
+.agdasima-regular {
+    font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.agdasima-bold {
+    font-family: "Agdasima", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.cinzel-text {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.xl-text {
+    font-size: x-large;
+}
+
+.emphasize-about {
+    font-weight: 700;
+}
+
+.lead {
+    font-size: 22px;
+}
+
+.skill-text {
+    font-size: 20px;
+}
+
+.webbed {
+    background-color: #393E46;
+    border: 0px;
+    border-radius: 50%;
+}
