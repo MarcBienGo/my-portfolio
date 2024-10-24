@@ -9,9 +9,11 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=keyboard_double_arrow_up" />
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="icon" href="./assets/images/favicon/favicon.ico" type="image/x-icon">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    <script src="./scripts/script.js" defer></script>
   <title>Marc Bien Go</title>
 </head>
 
@@ -20,7 +22,8 @@
     <section id="navigation">
       <nav class="navbar navbar-expand-md navbar-light rounded xl-text" aria-label="Fourth navbar example">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"></a>
+          <a class="navbar-brand" href="#"><img class="header mt-1 ms-lg-3 mt-lg-3 ms-3" height="55"
+              src="./assets/images/mg.png" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
             aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -56,10 +59,11 @@
         </div>
       </nav>
     </section>
+
     <section id="intro">
-      <div class="container col-xxl-12 px-4 py-5">
+      <div class="container col-xxl-12 px-4 py-1">
         <div
-          class="row flex-lg-row-reverse flex-column-reverse align-items-center justify-content-center g-5 pb-0 pt-3 ms-3 mb-3 me-3">
+          class="row flex-lg-row-reverse flex-column-reverse align-items-center justify-content-center g-5 pb-0 pt-3 ms-3 mb-3 me-3 hidden">
           <div class="col-10 col-xs-6 col-sm-6 col-md-6 col-lg-4">
             <div class="webbed">
               <img src="./assets/images/me-no-bg.png" class="top-photo d-block mx-lg-auto img-fluid"
@@ -88,10 +92,10 @@
       </div>
     </section>
     <section id="about">
-      <div class="container px-4 py-5">
-        <h2 class="pb-2 border-bottom agdasima-bold">A few things about myself..</h2>
+      <div class="container px-4 py-2">
+        <h2 class="pb-2 border-bottom agdasima-bold hidden">A few things about myself..</h2>
 
-        <div class="row row-cols-1 row-cols-md-1 align-items-md-center g-5 py-3">
+        <div class="row row-cols-1 row-cols-md-1 align-items-md-center g-5 py-3 hidden">
           <div class="col d-flex flex-column align-items-start gap-2">
             <p class="lead">From childhood, I have always gravitated toward <span
                 class="emphasize-about">computers</span>; programming has always felt like my destiny. With a passion
@@ -104,89 +108,66 @@
               dynamic web applications that have pushed the boundaries. My experience includes building and
               managing complex systems, such as an in-house <span class="emphasize-about">task and bug tracking
                 system</span>. I'm excited to leverage my
-              technical skills to contribute to new projects and collaborate with talented teams.</p>
+              technical skills and contribute to new projects and collaborate with talented teams.</p>
           </div>
         </div>
 
-        <h2 class="pb-2 pt-3 border-bottom agdasima-bold">The tools I've worked with..</h2>
+        <h2 class="pb-2 pt-3 border-bottom agdasima-bold hidden">The tools I've worked with: </h2>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5 agdasima-regular">
-          <div class="col d-flex align-items-start">
-            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-              <use xlink:href="#calendar3"></use>
-            </svg>
+          <div class="col d-flex align-items-start hidden">
             <div>
               <h3 class="fw-bold mb-0 fs-4 agdasima-bold text-body-emphasis">JavaScript</h3>
-              <p class="skill-text">I've use JavaScript to build dynamic and responsive web applications, enhancing both
+              <p class="skill-text">I've used JavaScript to build dynamic and responsive web applications, enhancing
+                both
                 functionality and user experience.</p>
             </div>
           </div>
-          <div class="col d-flex align-items-start">
-            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-              <use xlink:href="#calendar3"></use>
-            </svg>
+          <div class="col d-flex align-items-start hidden">
             <div>
               <h3 class="fw-bold mb-0 fs-4 agdasima-bold text-body-emphasis">PHP</h3>
-              <p>I've leverage PHP to develop server-side logic for handling data and creating
+              <p class="skill-text">I've leveraged PHP to develop server-side logic for handling data and creating
                 interactive, data-driven websites.</p>
             </div>
           </div>
-          <div class="col d-flex align-items-start">
-            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-              <use xlink:href="#calendar3"></use>
-            </svg>
+          <div class="col d-flex align-items-start hidden">
             <div>
               <h3 class="fw-bold mb-0 fs-4 agdasima-bold text-body-emphasis">HTML</h3>
               <p class="skill-text">I've used HTML to structure and organize the content and framework of web
                 applications.</p>
             </div>
           </div>
-          <div class="col d-flex align-items-start">
-            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-              <use xlink:href="#home"></use>
-            </svg>
+          <div class="col d-flex align-items-start hidden">
             <div>
               <h3 class="fw-bold mb-0 fs-4 agdasima-bold text-body-emphasis">CSS</h3>
               <p class="skill-text">I've utilized CSS to design and implement visually appealing, consistent layouts
                 across web pages.</p>
             </div>
           </div>
-          <div class="col d-flex align-items-start">
-            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-              <use xlink:href="#speedometer2"></use>
-            </svg>
+          <div class="col d-flex align-items-start hidden">
             <div>
               <h3 class="fw-bold mb-0 fs-4 agdasima-bold text-body-emphasis">MySQL</h3>
               <p class="skill-text">I've worked with MySQL to manage and query relational databases, ensuring efficient
                 data storage and retrieval.</p>
             </div>
           </div>
-          <div class="col d-flex align-items-start">
-            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-              <use xlink:href="#toggles2"></use>
-            </svg>
+          <div class="col d-flex align-items-start hidden">
             <div>
               <h3 class="fw-bold mb-0 fs-4 agdasima-bold text-body-emphasis">Amazon QuickSight</h3>
               <p class="skill-text">I've applied Amazon QuickSight to create insightful data visualizations and reports,
                 helping analyze key business metrics.</p>
             </div>
           </div>
-          <div class="col d-flex align-items-start">
-            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-              <use xlink:href="#geo-fill"></use>
-            </svg>
+          <div class="col d-flex align-items-start hidden">
             <div>
               <h3 class="fw-bold mb-0 fs-4 agdasima-bold text-body-emphasis">Amazon EC2</h3>
               <p class="skill-text">I've configured and managed virtual servers on Amazon EC2 to host scalable
                 applications in the cloud.</p>
             </div>
           </div>
-          <div class="col d-flex align-items-start">
-            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-              <use xlink:href="#tools"></use>
-            </svg>
+          <div class="col d-flex align-items-start hidden">
             <div>
               <h3 class="fw-bold mb-0 fs-4 agdasima-bold text-body-emphasis">GitHub</h3>
-              <p class="skill-text">I've use GitHub for version control, ensuring collaborative development and
+              <p class="skill-text">I've used GitHub for version control, ensuring collaborative development and
                 maintaining the integrity of my code across projects.</p>
             </div>
           </div>
@@ -195,47 +176,53 @@
     </section>
     <section id="projects">
       <div class="container px-4 py-2">
-        <h2 class="pb-2 border-bottom agdasima-bold">What I've worked on..</h2>
+        <h2 class="pb-2 border-bottom agdasima-bold hidden">What I've worked on:</h2>
         <div class="album py-5 bg-body-light">
           <div class="container agdasima-regular">
 
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-              <div class="col">
+            <div id="project-cards" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col hidden">
                 <div class="card shadow-sm">
-                  <img class="card-img-top" src="./assets/images/cosmos-conquest-thumbnail.png" height="300"
-                    alt="Card image cap">
+                  <img class="card-img-top window-card " src="./assets/images/cosmos-conquest-thumbnail.png"
+                    height="300" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title agdasima-bold">Cosmos Conquest</h5>
-                    <p class="card-text skill-text">A game developed for one of my web development introductory courses.
+                    <p class="card-text skill-text">Description: A game developed for one of my web development
+                      introductory courses.
                       <br>Mobile not yet supported.
+                      <br>
+                      <br>Language(s) used: JavaScript, CSS, HTML
                     </p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <a href="https://marcbiengo.github.io/cosmos-conquest/" target="_blank"><button type="button"
-                            class="btn btn-sm btn-outline-secondary album-btn-text">Play the game!</button></a>
+                            class="btn btn-outline-dark album-btn-text">Play the game!</button></a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col">
+              <div class="col hidden">
                 <div class="card shadow-sm">
                   <img class="card-img-top" src="./assets/images/resume-website.png" height="300" alt="Card image cap">
                   </svg>
                   <div class="card-body">
                     <h5 class="card-title agdasima-bold">Old Resume Website</h5>
                     <p class="card-text skill-text">My very first resume website. <br><br>A reminder of my humble
-                      beginnings.</p>
+                      beginnings.<br>
+                      <br>Language(s) used: JavaScript, CSS, HTML
+                    </p>
+
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <a href="https://marcbiengo.github.io/old-resume-website/" target="_blank"><button type="button"
-                            class="btn btn-sm btn-outline-secondary album-btn-text">View</button></a>
+                            class="btn btn-outline-dark album-btn-text">Take a peek!</button></a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col">
+              <div class="col hidden">
                 <div class="card shadow-sm">
                   <img class="card-img-top" src="./assets/images/doovop.png" height="300" alt="Card image cap">
                   <title>Doovop</title>
@@ -244,11 +231,14 @@
                     <h5 class="card-title agdasima-bold">Doovop</h5>
                     <p class="card-text skill-text">The in-house bug and task tracking system I've created for my
                       previous
-                      employer. To this day, this is the most sophisticated system that I've built.</p>
+                      employer. To this day, this is the most sophisticated system that I've built.
+                      <br>
+                      <br>Language(s) used: JavaScript, CSS, HTML, PHP, MySQL
+                    </p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <a href="./public/doovop.html" target="_blank"><button type="button"
-                            class="btn btn-sm btn-outline-secondary album-btn-text">View</button></a>
+                            class="btn btn-outline-dark album-btn-text">Know more!</button></a>
                       </div>
                     </div>
                   </div>
@@ -259,15 +249,42 @@
         </div>
     </section>
 
-    <section id="doovop">
-
+    <section id="contact" class="hidden">
+      <div class="container px-4 py-2 my-3 agdasima-bold">
+        <h2 class="pb-2 border-bottom agdasima-bold">Let's brainstorm!</h2>
+        <form method="post">
+          <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 py-5">
+            <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+              <div class="form-group">
+                <input type="text" name="txtName" class="form-control skill-text" placeholder="Your name..*" value="" />
+              </div>
+              <div class="form-group my-2">
+                <input type="text" name="txtEmail" class="form-control skill-text" placeholder="Your email.. *" value="" />
+              </div>
+              <div class="form-group my-2">
+                <input type="text" name="txtPhone" class="form-control skill-text" placeholder="Your phone number.. *" value="" />
+              </div>
+            </div>
+            <div class="col-12 col-lg-8 col-md-8 col-sm-12 ">
+              <div class="form-group">
+                <textarea name="txtMsg" class="contact-message form-control skill-text" placeholder="Your Message *"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row row-cols-1">
+            <div class="form-group to-top">
+              <input type="submit" name="btnSubmit" class="btn btn-outline-dark contact-btn" value="Send Message" />
+            </div>
+          </div>
+        </form>
+      </div>
     </section>
 
     <section id="back-to-top">
       <div class="container to-top">
         <a class="text-dark" href="#navigation"><span class="material-symbols-outlined">
-          keyboard_double_arrow_up
-          </span></a>
+            keyboard_double_arrow_up
+          </span><br></a>
       </div>
     </section>
 
