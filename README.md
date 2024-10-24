@@ -1,4 +1,4 @@
-# portfolio
+# My Portfolio
 Welcome to my portfolio website! This site serves as a showcase for my projects, skills, and experience as a full-stack web developer.
 
 ## Overview
