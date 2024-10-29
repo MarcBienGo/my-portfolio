@@ -17,7 +17,7 @@
   <title>Marc Bien Go</title>
 </head>
 
-<body>
+<body class="gradient-background">
   <div class="page-container">
     <section id="navigation">
       <nav class="navbar navbar-expand-md navbar-light rounded xl-text" aria-label="Fourth navbar example">
@@ -251,32 +251,33 @@
 
     <section id="contact" class="hidden">
       <div class="container px-4 py-2 my-3 agdasima-bold">
-        <h2 class="pb-2 border-bottom agdasima-bold">Let's brainstorm!</h2>
-        <form method="post">
+        <h2 class="pb-2 border-bottom agdasima-bold">Let's work together.</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="ed5ad3f6-bcf0-4c31-9152-37622bed54b3">
           <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 py-5">
             <div class="col-12 col-lg-4 col-md-4 col-sm-12">
               <div class="form-group">
-                <input type="text" name="txtName" class="form-control skill-text" placeholder="Your name..*" value="" />
+                <input type="text" name="txtName" class="form-control skill-text" placeholder="Your name..*" required />
               </div>
               <div class="form-group my-2">
                 <input type="text" name="txtEmail" class="form-control skill-text" placeholder="Your email.. *"
-                  value="" />
+                  required />
               </div>
               <div class="form-group my-2">
                 <input type="text" name="txtPhone" class="form-control skill-text" placeholder="Your phone number.. *"
-                  value="" />
+                  required />
               </div>
             </div>
             <div class="col-12 col-lg-8 col-md-8 col-sm-12 ">
               <div class="form-group">
                 <textarea name="txtMsg" class="contact-message form-control skill-text"
-                  placeholder="Your Message *"></textarea>
+                  placeholder="Your Message *" required></textarea>
               </div>
             </div>
           </div>
           <div class="row row-cols-1">
             <div class="form-group to-top">
-              <button class="btn btn-outline-dark contact-btn">Send Message</button>
+              <input type="submit" class="btn btn-outline-dark contact-btn" value="Send Message">
             </div>
           </div>
         </form>
