@@ -10,3 +10,7 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach(element => observer.observe(element));
+
+function workInProgress(){
+    alert("This is under construction.");
+}
